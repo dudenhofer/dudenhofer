@@ -1,0 +1,182 @@
+/** 
+ * $Id: fields.css,v 1.1.2.1 2010/10/30 23:13:53 jmburnz Exp $
+ * 
+ * TODO: check all D7 field class names, these are mostly from D6 CCK...
+ */
+
+/* Wrapper for all fields. */
+.field {}
+
+/* Field labels - these are h2 in Adaptivetheme */
+.field-label {}
+.field-lable-above .field-label {}
+.field-lable-inline .field-label {
+  display: inline;
+}
+
+/* Imagefields */
+.field-type-image {
+	background: transparent url(../images/bg-picture.png) no-repeat 0 0;
+	margin: 0 -10px 0 -8px;
+	padding: 5px 12px 0;
+	height: 312px;
+}
+div.field-name-field-icon {
+	background-image: none;
+	margin: 0 20px 0 0;
+	float: left;
+	padding: 0;
+	height: auto;
+}
+.field-type-image img {}
+
+/* Use "datetime" when creating new CCK date fields. */
+.field-type-datetime {}
+
+/* Filefield field. */
+.field-type-filefield {}
+
+/* Node reference field. */
+.field-type-nodereference {}
+
+/* User reference field. */
+.field-type-userreference {}
+
+/* Number fields. */
+.field-type-number-decimal {}
+.field-type-number-float   {}
+.field-type-number-integer {}
+
+/* Text fields. */
+.field-type-text {}
+.field-type-text-long {}
+
+/* Term reference fields. */
+.field-type-taxonomy-term-reference .field-label {
+  font-size: 1em;
+  float: left;
+}
+section.field-name-field-category {
+	text-transform: uppercase;
+}
+section.field-name-field-topics a {
+	background-color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2px 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+section.field-name-field-topics a:hover {
+	color: #fff;
+	background-color: #0879BF;
+}
+section.field-name-field-topics ul li {
+	padding: 0;
+}
+.field-type-taxonomy-term-reference ul {
+  margin: 0;
+  padding: 0;
+}
+.field-type-taxonomy-term-reference ul li {
+  display: inline;
+  list-style: none;
+  padding: 0 .75em 0 0;
+}
+
+/* Imagefield skinr settings */
+.ai-l .field-type-image {
+  margin: 4px 20px 10px 0;
+}
+.ai-r .field-type-image {
+  margin: 4px 0 10px 20px;
+} 
+.ai-b,
+.ai-b .block-inner,
+.ai-b .block-content {}
+.ai-b .block-content p,
+.ai-b .block-content div.field-type-image {}
+
+.media-youtube-outer-wrapper{
+	padding-top: 20px;
+}
+.youtube-player {
+	width: 640px !important;
+	height: 390px !important;
+	border: 4px solid #fff;
+}
+div.media-youtube-outer-wrapper{ 
+	width: 100% !important;
+	height: 430px !important;
+}
+div.media-youtube-preview-wrapper{
+	background: transparent url(../images/bg-video.png) no-repeat 0 0;
+	margin: 0 0 0 -25px;
+	padding: 0px 25px 0;
+	width: 640px !important;
+	height: 430px !important;
+}
+a.video-link {
+	float: right;
+	padding-top: 60px;
+	background: transparent url(../images/video.png) no-repeat 0 0;
+	width: 80px;
+	text-align: center;
+	margin: 0 10px;
+}
+a.video-link:hover {
+	background: transparent url(../images/video-over.png) no-repeat 0 0;
+}
+.image-wrapper {
+	position: relative;
+}
+.image-wrapper .field-name-field-caption {
+	background: none repeat scroll 0 0 #000000;
+	bottom: 37px;
+	color: #FFFFFF;
+	opacity: 0.5;
+	padding: 3px 8px;
+	position: absolute;
+	right: 4px;
+	font-style: italic;
+	font-size: 12px;
+}
+section.field-name-field-downloads {
+	background: transparent url(../images/checker-blue.png) repeat 0 0;
+	border: 1px solid #c9d5ec;
+	margin-bottom: 20px;
+	margin-right: 50px;
+	padding: 10px;
+}
+section.field-name-field-downloads .field-label {
+	color: #C9D5EC;
+}
+section.field-name-field-downloads .file {
+	width: auto;
+	display: block;
+}
+section.field-name-field-downloads .file img{
+	display: none;
+}
+section.field-name-field-downloads .file a {
+	background: transparent url(../images/download.png) no-repeat 0 0;
+	font-size: 18px;
+	padding: 5px 0 5px 35px;
+	opacity: .5;
+}
+section.field-name-field-downloads .file a:hover {
+	opacity: 1;
+}
+.field-name-field-image a .zoom {
+	background: transparent url(../images/full-screen.png) no-repeat 0 0;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	display: none;
+}
+.field-name-field-image a:hover .zoom {
+	display: block;
+}

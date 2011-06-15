@@ -1,0 +1,151 @@
+/**
+ * $Id: articles.css,v 1.1.4.5 2010/10/30 23:36:25 jmburnz Exp $
+ */
+
+/* Articles (nodes) */
+.article {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 30px;
+}
+
+.article > header {
+	padding-top: 1px;
+}
+
+/* Teaser title. */
+.article-title {}
+.article-title a:link,
+.article-title a:visited,
+.article-title a:active {
+  text-decoration: none;
+}
+.article-title a:hover,
+.article-title a:focus {
+  text-decoration: none;
+}
+
+/* Skinr article title alignment. */
+.ta-l .article-title {
+  text-align: left;
+}
+.ta-r .article-title {
+  text-align: right;
+}
+.ta-c .article-title {
+  text-align: center;
+}
+
+/* User Picture. */
+.article .user-picture { float:left;}
+.article .user-picture img {width:20px;}
+
+/* Submitted */
+.article > footer {}
+.article > footer a {}
+.article > footer a:hover {}
+.article > footer .username {}
+.article > footer time {}
+
+/* Links. */
+.article ul.links {
+  margin: 0;
+}
+.article ul.links li {
+  margin: 0;
+  padding: 0 .75em 0 0;
+}
+.article ul.links li a {}
+.article ul.links li.node_read_more a {}
+.article ul.links li.comment_add a {}
+.article ul.links li.comment_comments a {}
+.article ul.links li.comment_new_comments a {}
+.article ul.links li.blog_usernames_blog a {}
+.article ul.links li.print_html a {}
+.article ul.links li.print_email a {}
+.article ul.links li.print_pdf a {}
+
+/* UL link first and last classes. */
+.article ul.links li.first {}
+.article ul.links li.last  {}
+
+/* Workflow states. */
+.article-add    {}
+.article-edit   {}
+.article-delete {}
+.article-preview  {}
+.article-sticky   {}
+.article-promoted {}
+
+/* Status. */
+.article-unpublished {}
+
+/* Theme the teaser. */
+.article-teaser {}
+.article-content {
+	margin-left: 80px;
+  margin-bottom: 50px;
+  background: transparent url(../images/signature.png) no-repeat left bottom;
+  padding-bottom: 50px;
+}
+.article-type-page .article-content {
+	background-image: none;
+}
+.article ul.links {
+	margin-left: 80px;
+}
+div.more a {
+	border: 0;
+	background: transparent url(../images/readmore.png) no-repeat 0 0;
+	color: #FFFFFF;
+	display: block;
+	padding-top: 48px;
+	text-transform: uppercase;
+	width: 126px;
+	height: 0;
+	overflow: hidden;
+	margin: 0 20px 0 0;
+	float: right;
+}
+div.more a:hover {
+	background: transparent url(../images/readmore-over.png) no-repeat 0 0;	
+}
+
+/* attached gallery */
+.article-content .jcarousel-container {
+	margin-left: -80px;
+}
+.jcarousel-prev, .jcarousel-next {
+	position: absolute;
+	width: 48px;
+	height: 48px;
+	top: 75px;
+}
+.jcarousel-prev {
+	background: transparent url(../images/prev.png) no-repeat 0 0;
+	left: 0;
+}
+.jcarousel-next {
+	background: transparent url(../images/next.png) no-repeat 0 0;
+	right: 0;
+}
+.jcarousel-container-horizontal {
+	padding: 20px 48px;
+}
+.jcarousel-clip-horizontal .jcarousel-item {
+	margin-left: 0;
+	margin-right: 20px;
+	position: relative;
+}
+.jcarousel-clip-horizontal .jcarousel-item .screenshot-title {
+	position: absolute;
+	bottom: 5px;
+	width: 195px;
+	padding: 5px 10px;
+	background: transparent url(../images/black-trans.png) repeat 0 0;
+	color: #fff;
+	font-size: 1.2em;
+	display: none;
+}
+.jcarousel-clip-horizontal .jcarousel-item:hover .screenshot-title {
+	display: block;
+}
