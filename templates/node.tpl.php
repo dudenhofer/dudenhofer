@@ -23,13 +23,11 @@
 		<div class="month"><?php print $month;?></div>
 		<div class="day"><?php print $day;?></div>
 		</div>
-		<div class="sharing"><span  class='st_facebook_vcount' displayText='Facebook'></span><br /><span  class='st_twitter_vcount' displayText='Tweet'></span><br /><span  class='st_sharethis_vcount' displayText='Share'></span><br />
-		
-		<script type="text/javascript">var switchTo5x=true;</script><script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'960f5a91-13d0-4551-886f-077002b28ba6'});</script>
-		</div>
 		<?php endif;?>
   <h1 id="page-title"><?php print $title;?></h1>
   <h2 class="subtitle"><?php print render($content['field_subtitle']); ?></h2>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+  <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=205735869471538&amp;xfbml=1"></script><fb:like href="<?php print $domain.$node_url;?>" send="true" width="450" show_faces="false" font=""></fb:like>
   <?php if($content['field_amazon_code']):?>
   
   <?php endif;?>
@@ -72,7 +70,7 @@
   	<div class="teaser-links">
   		<div class="more"><a href="<?php print $node_url;?>">Read More</a></div>
   		<div class="fb-comment-count">
-  			<iframe src="http://www.facebook.com/plugins/comments.php?href=http://dudenhofer.com<?php print $node_url;?>&permalink=1" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:16px;" allowTransparency="true"></iframe> 
+  			<iframe src="http://www.facebook.com/plugins/comments.php?href=<?php print $domain.$node_url;?>&permalink=1" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:16px;" allowTransparency="true"></iframe> 
   		</div>
   	</div>
   	<?php else:?>
@@ -84,9 +82,10 @@
   <?php if($page && $type != 'page'):?>
   <div class="fb-comments">
   <div class="message">Do you have an opinion or something to say about this?</div>
-  <div class="count"><fb:comments-count href=http://dudenhofer.com<?php print $node_url;?>></fb:comments-count> comments</div>
+  <?php print $domain.$node_url;?>
+  <div class="count"><fb:comments-count href="<?php print $domain.$node_url;?>"></fb:comments-count> comments</div>
   <h2>Leave A Comment</h2>
-  <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="http://dudenhofer.com<?php print $node_url;?>" num_posts="10" width="690"></fb:comments>
+  <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="<?php print $domain.$node_url;?>" num_posts="10" width="690"></fb:comments>
   </div>
   <?php endif;?>
   <?php //dpm(get_defined_vars());?>

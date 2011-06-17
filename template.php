@@ -104,5 +104,6 @@ function dudenhofer_preprocess_node(&$vars) {
       $vars['month'] = date('M', $node->created);
       $vars['day'] = date('j', $node->created);
       $vars['year'] = date('Y', $node->created);
+      $vars['domain'] = 'http://'.$_SERVER['HTTP_HOST'];
 
 }

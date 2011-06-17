@@ -86,6 +86,8 @@
   margin-bottom: 50px;
   background: transparent url(../images/signature.png) no-repeat left bottom;
   padding-bottom: 50px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
 }
 .article-type-page .article-content {
 	background-image: none;
@@ -148,4 +150,14 @@ div.more a:hover {
 }
 .jcarousel-clip-horizontal .jcarousel-item:hover .screenshot-title {
 	display: block;
+}
+.twitter-share-button {
+	float: right;
+	margin-left: 10px;
+}
+.fb_iframe_widget {
+	margin-left: 80px;
+}
+.fb-comments .fb_iframe_widget {
+	margin-left: 0;
 }
