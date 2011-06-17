@@ -1,8 +1,11 @@
-div.region-help, div.taxonomy-term, div.topics, div.info, blockquote {
+div.region-help, div.taxonomy-term, .field-name-field-topics, div.info, blockquote {
 	background: transparent url(../images/checker-blue.png) repeat 0 0;
 	border: 1px solid #c9d5ec;
 }
-div.taxonomy-term, div.topics, div.info {
+div.taxonomy-term, .field-name-field-topics, div.info {
 	margin-bottom: 20px;
 	padding: 10px;
+}
+div.topics {
+	padding-bottom: 1px;
 }
