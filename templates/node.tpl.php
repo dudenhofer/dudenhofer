@@ -82,7 +82,6 @@
   <?php if($page && $type != 'page'):?>
   <div class="fb-comments">
   <div class="message">Do you have an opinion or something to say about this?</div>
-  <?php print $domain.$node_url;?>
   <div class="count"><fb:comments-count href="<?php print $domain.$node_url;?>"></fb:comments-count> comments</div>
   <h2>Leave A Comment</h2>
   <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:comments href="<?php print $domain.$node_url;?>" num_posts="10" width="690"></fb:comments>
