@@ -107,3 +107,13 @@ function dudenhofer_preprocess_node(&$vars) {
       $vars['domain'] = 'http://'.$_SERVER['HTTP_HOST'];
 
 }
+function dudenhofer_theme($existing, $type, $theme, $path) {
+  return array(
+    'node_form' => array(
+        'arguments' => array('form' => NULL),
+        'path' => drupal_get_path('theme', 'dudenhofer') . '/templates',
+      'template' => 'node-post-form',
+        'render element' => 'form',
+    ),
+  );
+}

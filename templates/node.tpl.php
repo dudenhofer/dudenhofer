@@ -26,6 +26,7 @@
 		<?php endif;?>
   <h1 id="page-title"><?php print $title;?></h1>
   <h2 class="subtitle"><?php print render($content['field_subtitle']); ?></h2>
+  <div id="g-plus"><g:plusone size="medium"></g:plusone></div>
   <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
   <div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#appId=205735869471538&amp;xfbml=1"></script><fb:like href="<?php print $domain.$node_url;?>" send="true" width="450" show_faces="false" font=""></fb:like>
   <?php if($content['field_amazon_code']):?>

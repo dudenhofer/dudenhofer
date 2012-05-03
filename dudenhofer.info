@@ -22,6 +22,7 @@
   stylesheets[all][] = css/skins.css
   stylesheets[all][] = css/messages.css
   stylesheets[all][] = css/wysiwyg-editor.css
+  stylesheets[print][] = css/custom-things.css
   stylesheets[print][] = css/print.css
   
   stylesheets-conditional[lt IE 7][all][] = css/ie/ie6-and-below.css
@@ -32,6 +33,10 @@
   ;stylesheets[all][] = css/dark.css
 
 	scripts[] = js/script.js
+	scripts[] = js/mwheelIntent.js
+	scripts[] = js/jquery.mousewheel.js
+	scripts[] = js/jquery.listnav.js
+	scripts[] = js/jquery.jscrollpane.js
 
 ;----------// Regions
   regions[sidebar_first]     = Sidebar first
